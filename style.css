@@ -275,7 +275,7 @@ body {
     top: 70px;
     left: 0;
     background-color: #00147d;
-    width: 90%;
+    width: 100%;
     padding: 20px;
   }
 
@@ -304,7 +304,7 @@ body {
   }
 
   .product-content-data-view {
-    width: 100%;
+    width: 107%;
     padding-top: 4vh;
     align-items: baseline;
     display: grid;
