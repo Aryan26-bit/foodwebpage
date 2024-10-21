@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reynolds Brands UI</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- External JavaScript file -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header section with navigation -->
+    <header class="sticky-header">
+      <div class="navbar">
+        <!-- Brand logo -->
+        <div class="brand">
+          <img src="images/reynold_img.jpeg" alt="Reynolds Logo" />
+        </div>
+
+        <!-- Main navigation links -->
+        <nav class="nav-links">
+          <ul id="menu">
+            <!-- Products section with dropdown menu -->
+            <li class="icon-alignment-product">
+              <span><img src="images/Products.svg" alt="Products Icon" /></span>
+              <a href="#" onclick="showContent('products')">PRODUCTS</a>
+
+              <!-- Dropdown menu -->
+              <div class="dropdown">
+                <div class="product-content">
+                  <div class="product-content-data-view">
+                    <!-- Product items -->
+                    <div class="product-content-data">
+                      <img
+                        src="images/12inParchmentRoll_packagingHero_1.16.19.png"
+                        alt="Aluminium Foil"
+                      />
+                      <span class="heading-name">ALUMINIUM FOIL</span>
+                      <span class="content-data">
+                        Perfect for grilling, baking and more.
+                      </span>
+                    </div>
+
+                    <div class="product-content-data">
+                      <img
+                        src="images/12inParchmentRoll_packagingHero_1.16.19.png"
+                        alt="Parchment Paper"
+                      />
+                      <span class="heading-name">PARCHMENT PAPER</span>
+                      <span class="content-data">
+                        Oven safe, non-stick performance for baking & roasting.
+                      </span>
+                    </div>
+
+                    <div class="product-content-data">
+                      <img
+                        src="images/12inParchmentRoll_packagingHero_1.16.19.png"
+                        alt="Disposable Bakeware"
+                      />
+                      <span class="heading-name">DISPOSABLE BAKEWARE</span>
+                      <span class="content-data">
+                        Great for any meal, with no cleanup.
+                      </span>
+                    </div>
+
+                    <div class="product-content-data">
+                      <img
+                        src="images/12inParchmentRoll_packagingHero_1.16.19.png"
+                        alt="Cooking Bags & Liners"
+                      />
+                      <span class="heading-name">COOKING BAGS & LINERS</span>
+                      <span class="content-data">
+                        Great for any meal, with no cleanup.
+                      </span>
+                    </div>
+
+                    <div class="product-content-data">
+                      <img
+                        src="images/12inParchmentRoll_packagingHero_1.16.19.png"
+                        alt="Wax & Freezer Paper"
+                      />
+                      <span class="heading-name">WAX & FREEZER PAPER</span>
+                      <span class="content-data">
+                        Protects surfaces & keeps food fresh longer.
+                      </span>
+                    </div>
+
+                    <div class="product-content-data">
+                      <img
+                        src="images/500x335_RK_BkngCps_DS1_ew.png"
+                        alt="Other Products"
+                      />
+                      <span class="heading-name">OTHER PRODUCTS</span>
+                      <span class="content-data">
+                        Perfect for grilling, baking and more.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Vertical divider -->
+            <span style="color: #fff" class="straight-line">│</span>
+
+            <!-- Other navigation links -->
+            <li class="icon-alignment-recipe">
+              <span><img src="images/Recipes.svg" alt="Recipes Icon" /></span>
+              <a href="#">RECIPES</a>
+            </li>
+
+            <span style="color: #fff" class="straight-line">│</span>
+            <li class="icon-alignment-tips">
+              <span><img src="images/Tips.svg" alt="Tips Icon" /></span>
+              <a href="#">TIPS & HOW-TOS</a>
+            </li>
+
+            <span style="color: #fff" class="straight-line">│</span>
+            <li class="icon-alignment-holiday">
+              <span><img src="images/Holidays.svg" alt="Holidays Icon" /></span>
+              <a href="#">HOLIDAYS & ENTERTAINING</a>
+            </li>
+
+            <span style="color: #fff" class="straight-line">│</span>
+            <li class="icon-alignment-story">
+              <span><img src="images/Story.svg" alt="Story Icon" /></span>
+              <a href="#">OUR STORY</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Social media and search icons -->
+        <div class="icons-view-alignment">
+          <div class="icons-view">
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-youtube"></i></span>
+            <span><i class="fa-brands fa-pinterest"></i></span>
+          </div>
+
+          <div class="search-icon">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+        </div>
+
+        <!-- Hamburger menu for mobile view -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="cooked-heading">HOME-COOKED <br />FAVOURITES</h1>
+          <p class="cooking-content">
+            These simple and delicious meals are perfect for your busy family or
+            to share with a friend or neighbor.
+          </p>
+          <button class="btn">GET COOKING ➔</button>
+        </div>
+      </section>
+
+      <!-- Dynamic content section -->
+      <div id="dynamic-content"></div>
+    </main>
+  </body>
+</html>
